@@ -9,8 +9,7 @@ To demonstrate the functionality, we will be using WideWorldImporters as our sam
 ## Contents
 [About this sample](#about-this-sample)<br/>
 [Before you begin](#before-you-begin)<br/>
-[Run this sample](#run-this-sample)<br/>  
-[Disclaimers](#disclaimers)<br/>  
+[Run this sample](#run-this-sample)<br/>
 [Related links](#related-links)
 
 ## About this sample
@@ -69,3 +68,15 @@ Run the [GraphQueries-wwi.sql](https://github.com/shkale-msft/GraphRecursiveQuer
  1. A simple MATCH query, which demonstrates how MATCH works in SQL Graph
  2. A query which does arbitrary number of hops to find friend-of-friend. It will find friends of a customer (in this case customer# 11) upto 3 hops away. If you set the @MaxHops to 5 or 10, it will find the friends up to 5 or 10 hops away, respectively.
  3. The third query is a simple implementation of Dijkastra's Breadth First Search Algorithm, using T-SQL. It uses the MATCH syntax for finding immediate friends of a person. In this query, we are trying to find shortest path  between 2 people (Emma and David) in the graph. We start with David, find immediate friends of David and check if Emma is in the list. If not, we store the first level friends in a temporary table and in the next loop, find the immediate friends of these people. We continue searching until we find Emma. As soon as Emma is found in the graph, we break from the loop and return the results to the user.
+ 
+## Related Links
+
+For more information about Graph DB in SQL Server 2017, see these articles:
+
+1.  [Graph processing with SQL Server and Azure SQL Database](https://docs.microsoft.com/en-us/sql/relational-databases/graphs/sql-graph-overview)
+    
+2.  [SQL Graph Architecture](https://docs.microsoft.com/en-us/sql/relational-databases/graphs/sql-graph-architecture)
+    
+3.  [Arvind Shyamsundar's Blog](https://blogs.msdn.microsoft.com/arvindsh/)
+4.  [Sergio Govoni's Sample](https://github.com/Microsoft/sql-server-samples/tree/master/samples/demos/sql-graph/recommendation-system)
+
