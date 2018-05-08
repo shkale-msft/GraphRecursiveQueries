@@ -7,10 +7,10 @@ SQL Server 2017 and Azure SQL Database now let you create a graph database, to h
 To demonstrate the functionality, we will be using WideWorldImporters as our sample database.  
 
 ## Contents
-[About this sample](#about-this-sample)
-[Before you begin](#before-you-begin)
-[Run this sample](#run-this-sample)  
-[Disclaimers](#disclaimers)  
+[About this sample](#about-this-sample)<br/>
+[Before you begin](#before-you-begin)<br/>
+[Run this sample](#run-this-sample)<br/>  
+[Disclaimers](#disclaimers)<br/>  
 [Related links](#related-links)
 
 ## About this sample
